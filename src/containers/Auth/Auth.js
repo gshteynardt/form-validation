@@ -77,12 +77,14 @@ export const Auth = () => {
 
   //обработчик событий inputs
   const onChangeHandler = (evt, controlName) => {
-    const control = {...formControls[controlName]};
+    const formControlsTemp = {...formControls};
+    const control = formControlsTemp[controlName];
 
     control.value = evt.target.value;
     control.touched = true;
     control.valid = validateControl(control.value, control.validations);
-    setFormControls(prevState => ({prevState, ...control}));
+
+    setFormControls(formControlsTemp);
   }
 
   //создаем inputs
