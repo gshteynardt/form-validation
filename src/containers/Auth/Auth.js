@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import classes from './Auth.module.css';
 import Button from '../../UI/Button/Button';
 import { Input } from "../../UI/Input/Input";
-
-const  validateEmail = (inputEmail) => {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(inputEmail).toLowerCase());
-}
+import is from 'is_js';
 
 export const Auth = () => {
 
@@ -38,6 +34,7 @@ export const Auth = () => {
   }
 
   const [formControls, setFormControls] = useState(initValues);
+  const [isFormValid, setIsFormValid] = useState(false);
 
   const handlerLogin = () => {
 
@@ -65,7 +62,7 @@ export const Auth = () => {
     }
 
     if(validations.email) {
-      isValid = validateEmail(value) && isValid;
+      isValid = is.email(value) && isValid;
     }
 
     if(validations.minLength) {
@@ -84,9 +81,14 @@ export const Auth = () => {
     control.touched = true;
     control.valid = validateControl(control.value, control.validations);
 
+    //определяем валидность каждого input для валидации формы
+    Object.keys(formControlsTemp).forEach(name => {
+      setIsFormValid(formControlsTemp[name].valid)
+    })
+
     setFormControls(formControlsTemp);
   }
-
+  console.log(isFormValid);
   //создаем inputs
   const renderInputs = () => {
     return Object.keys(formControls).map((controlName, index) => {
@@ -117,12 +119,14 @@ export const Auth = () => {
           <Button
             type="success"
             onClick={handlerLogin}
+            disabled={!isFormValid}
           >
             Войти
           </Button>
           <Button
             type='success'
             onClick={handlerRegister}
+            disabled={!isFormValid}
           >
             Авторизоваться
           </Button>

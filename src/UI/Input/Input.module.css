@@ -4,8 +4,9 @@
 
 .input__label {
 	margin-bottom: 3px;
-	padding: 0px;
+	padding: 0;
 	display: block;
+	font-weight: bold;
 }
 
 .input__input {

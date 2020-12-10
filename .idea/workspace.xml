@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef036a75-34e0-4ecb-a265-293bcfa7dd02" name="Default Changelist" comment="" />
+    <list default="true" id="ef036a75-34e0-4ecb-a265-293bcfa7dd02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/form/formFramework.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hock/Auxiliary/Auxiliary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Button/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/Button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Input/Input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Input/Input.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Auth/Auth.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -38,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -66,6 +84,8 @@
       <updated>1607352360022</updated>
       <workItem from="1607352361398" duration="8758000" />
       <workItem from="1607441855183" duration="4840000" />
+      <workItem from="1607527406507" duration="7750000" />
+      <workItem from="1607622157707" duration="5216000" />
     </task>
     <servers />
   </component>
