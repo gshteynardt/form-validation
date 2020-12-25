@@ -6,7 +6,7 @@ const Button = ({type, disabled, onClick, children}) => {
     classes.button,
     classes[type]
   ]
- console.log(cls)
+
   return (
     <button
       onClick={onClick}
