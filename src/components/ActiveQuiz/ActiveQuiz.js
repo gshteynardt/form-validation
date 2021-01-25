@@ -18,10 +18,10 @@ export const ActiveQuiz = (props) => {
 
       <p className={'question'}>
         <span>
-          <strong>{answerNumber}.</strong>&nbsp;
+          <strong>{answerNumber + 1}.</strong> &nbsp;
           { question }
         </span>
-        <small>{answerNumber} из {quizLength}</small>
+        <small>{answerNumber + 1} из {quizLength}</small>
       </p>
 
       <AnswersList

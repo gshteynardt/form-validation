@@ -1,0 +1,25 @@
+.finished-quiz {
+	padding: 20px;
+	color: #fff;
+	border: 2px solid #fff;
+	margin: 0 10px;
+	box-sizing: border-box;
+}
+
+.finished-quiz__items {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.finished-quiz__icon {
+	margin-left: 10px;
+}
+
+.finished-quiz__icon_success {
+	color: rgba(161, 240, 69, .7);
+}
+
+.finished-quiz__icon_error {
+	color: rgba(240, 87, 108, .7);
+}
