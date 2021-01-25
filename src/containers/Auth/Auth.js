@@ -88,7 +88,7 @@ export const Auth = () => {
 
     setFormControls(formControlsTemp);
   }
-  console.log(isFormValid);
+
   //создаем inputs
   const renderInputs = () => {
     return Object.keys(formControls).map((controlName, index) => {

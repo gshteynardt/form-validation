@@ -1,13 +1,16 @@
 import './App.css';
 import { Auth } from "./containers/Auth/Auth";
-import {QuizCreator} from "./containers/QuizCreator/QuizCreator";
+import { QuizCreator } from "./containers/QuizCreator/QuizCreator";
+import Layout from "./hocs/Layout/Layout";
+import {Quiz} from "./containers/Quiz/Quiz";
 
 function App() {
   return (
-    <div className="App">
+    <Layout>
       <Auth/>
       <QuizCreator/>
-    </div>
+      <Quiz/>
+    </Layout>
   );
 }
 
