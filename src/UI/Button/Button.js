@@ -1,11 +1,12 @@
-import React from 'react'
-import classes from './Button.module.css'
+import React from 'react';
+import classes from './Button.module.css';
 
-const Button = ({type, disabled, onClick, children}) => {
+const Button = ({type, disabled, onClick, children, className}) => {
   const cls = [
     classes.button,
-    classes[type]
-  ]
+    classes[type],
+    className,
+  ];
 
   return (
     <button
@@ -15,7 +16,7 @@ const Button = ({type, disabled, onClick, children}) => {
     >
       {children}
     </button>
-  )
+  );
 }
 
-export default Button
+export default Button;

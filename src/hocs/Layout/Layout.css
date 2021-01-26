@@ -1,10 +1,10 @@
-.Layout {
+.layout {
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.Layout main {
+.layout__context {
     display: flex;
     flex-direction: column;
     flex-grow: 1;

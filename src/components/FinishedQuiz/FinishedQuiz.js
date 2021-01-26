@@ -1,5 +1,8 @@
 import React from 'react';
 import './FinishedQuiz.css';
+import Button from "../../UI/Button/Button";
+import {Link} from "react-router-dom";
+
 
 export const FinishedQuiz = ({result, quiz, onRetry}) => {
   //считаем кол-во правильных ответов
@@ -39,9 +42,18 @@ export const FinishedQuiz = ({result, quiz, onRetry}) => {
       </p>
 
       <div>
-        <button
+
+        <Button
           onClick={onRetry}
-        >Повторить</button>
+          type={'primary'}
+        >Повторить</Button>
+
+        <Link to={'/'}>
+          <Button
+            onClick={onRetry}
+            type={'success'}
+          >Перейти в список тестов</Button>
+        </Link>
       </div>
     </div>
   );
