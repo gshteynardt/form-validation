@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef036a75-34e0-4ecb-a265-293bcfa7dd02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Input/Input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +96,7 @@
       <workItem from="1610981680024" duration="3119000" />
       <workItem from="1611516991211" duration="24458000" />
       <workItem from="1611662435549" duration="7832000" />
-      <workItem from="1611777771685" duration="7011000" />
+      <workItem from="1611777771685" duration="7387000" />
     </task>
     <servers />
   </component>
