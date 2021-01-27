@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import classes from './QuizCreator.module.css';
+import './QuizCreator.css';
 import Button from "../../UI/Button/Button";
-import {createControl, validate, validateForm} from "../../form/formFramework";
-import {Input} from "../../UI/Input/Input";
+import { createControl, validate, validateForm } from "../../form/formFramework";
+import { Input } from "../../UI/Input/Input";
 import { Auxiliary } from '../../hocs/Auxiliary/Auxiliary';
-import {Select} from "../../UI/Select/Select";
+import { Select } from "../../UI/Select/Select";
 
 
 //создаем опции для input
@@ -32,24 +32,29 @@ export const QuizCreator = () => {
 
   const [state, setState] = useState({
     quiz: [],
+    isFormValid: false,
     rightAnswerId: 1,
     formControls: createFormControls(),
   });
 
-  const [isFormValid, setIsFormValid] = useState(false);
-
   const onChangeHandler = (value, controlName) => {
-    const formControlsTemp = {...state.formControls};
-    const control = formControlsTemp[controlName];
-
+    const formControls = {...state.formControls};
+    const control = {...formControls[controlName]};
     control.touched = true;
     control.value = value;
-    control.validate = validate(control.value, control.validation);
-    setState(prevValue => ({...prevValue, formControlsTemp}));
+    control.valid = validate(control.value, control.validation);
+    formControls[controlName] = control;
+
+    setState(prevValue => ({
+        ...prevValue,
+        formControls,
+        isFormValid: validateForm(formControls),
+      })
+    );
   }
 
   const selectChangeHandler = (evt) => {
-    setState(prevValue => ({...prevValue, rightAnswerId: +evt.target.value}))
+    setState(prevValue => ({...prevValue, rightAnswerId: +evt.target.value}));
   }
 
   const renderInputs = () => {
@@ -61,7 +66,7 @@ export const QuizCreator = () => {
           label={control.label}
           value={control.value}
           valid={control.valid}
-          shouldValidate={!!control.validations}
+          shouldValidate={!!control.validation}
           touched={control.touched}
           error={control.error}
           onChange={e => onChangeHandler(e.target.value, controlName)}
@@ -87,20 +92,51 @@ export const QuizCreator = () => {
     evt.preventDefault();
   }
 
-  const addQuestionHandler = () => {
+  const addQuestionHandler = (evt) => {
+    evt.preventDefault();
 
+    const quiz = state.quiz.concat();
+    const index = quiz.length + 1;
+
+    const { question, option1, option2, option3, option4 } = state.formControls;
+
+    const questionItem = {
+      question: question.value,
+      id: index,
+      answers: [
+        {text: option1.value, id: option1.id},
+        {text: option2.value, id: option2.id},
+        {text: option3.value, id: option3.id},
+        {text: option4.value, id: option4.id},
+      ]
+    }
+
+    quiz.push(questionItem);
+    setState({
+      quiz,
+      isFormValid: false,
+      rightAnswerId: 1,
+      formControls: createFormControls(),
+    })
   }
 
-  const createQuizHandler = () => {
+  const createQuizHandler = (evt) => {
+    evt.preventDefault();
 
+    console.log(state.quiz)
   }
 
   return (
-    <div className={classes.QuizCreator}>
-      <div>
-        <h1>Quiz Creator</h1>
+    <div className={'quiz-creator'}>
+      <div className={'quiz-creator__wrapper'}>
+        <h1
+          className={'quiz-creator__title'}
+        >Quiz Creator</h1>
 
-        <form onSubmit={submitHandler}>
+        <form
+          className={'quiz-creator__form'}
+          onSubmit={submitHandler}
+        >
 
           {renderInputs()}
 
@@ -108,12 +144,14 @@ export const QuizCreator = () => {
           <Button
             type='primary'
             onClick={addQuestionHandler}
+            disabled={!state.isFormValid}
           >
             Добавить вопрос
           </Button>
           <Button
             type='success'
             onClick={createQuizHandler}
+            disabled={state.quiz === 0}
           >
             Создать тест
           </Button>

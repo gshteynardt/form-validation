@@ -1,4 +1,4 @@
-.QuizCreator {
+.quiz-creator {
 	display: flex;
 	justify-content: center;
 	padding-top: 50px;
@@ -7,17 +7,17 @@
 	background: linear-gradient(270deg, #f0613c 0%, #f0783c 100%);
 }
 
-.QuizCreator > div {
+.quiz-creator__wrapper {
 	width: 100%;
-	max-width: 100%;
+	max-width: 600px;
 	padding: 0 20px;
 }
 
-.QuizCreator h1 {
+.quiz-creator__title {
 	text-align: center;
 }
 
-.QuizCreator form {
+.quiz-creator__form {
 	background: #eee;
 	border-radius: 5px;
 	padding: 15px;

@@ -12,7 +12,7 @@ export const Input = ({ type, label, value, onChange, error, valid, touched, sho
   const htmlFor = `${inputType}-${Math.random()}`;
 
   if(isInvalid( valid, touched, shouldValidate)) {
-    cls.push(classes.input__wrapper_invalid)
+    cls.push(classes.input__wrapper_invalid);
   }
 
   return(
@@ -29,7 +29,7 @@ export const Input = ({ type, label, value, onChange, error, valid, touched, sho
       {
         isInvalid( valid, touched, shouldValidate)
           ? <span className={classes.input__span}>
-            {error || 'Введите верное значение'}
+            { error  || 'Введите верное значение'}
         </span>
           : null
       }

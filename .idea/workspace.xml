@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef036a75-34e0-4ecb-a265-293bcfa7dd02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UI/Backdrop/Backdrop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Backdrop/Backdrop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer/Drawer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer/Drawer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MenuToggle/MenuToggle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MenuToggle/MenuToggle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/QuizList/QuizList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/QuizList/QuizList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FinishedQuiz/FinishedQuiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FinishedQuiz/FinishedQuiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hocs/Layout/Layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/hocs/Layout/Layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hocs/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hocs/Layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Input/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +23,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1lKioUA57ZLOka1DQRn9B0J3fQv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -61,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/ActiveQuiz/AnswearsList" />
       <recent name="$PROJECT_DIR$/src/hock" />
       <recent name="$PROJECT_DIR$/src/hock/Auxiliary" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -105,7 +99,8 @@
       <workItem from="1609105116510" duration="5600000" />
       <workItem from="1610981680024" duration="3119000" />
       <workItem from="1611516991211" duration="24458000" />
-      <workItem from="1611662435549" duration="7310000" />
+      <workItem from="1611662435549" duration="7832000" />
+      <workItem from="1611777771685" duration="7011000" />
     </task>
     <servers />
   </component>
